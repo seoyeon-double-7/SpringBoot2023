@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>회원가임</h1>
+<form method="post" action="/register" id="myForm">
+  <label>ID</label>
+  <input name="id" type="text"><br>
+
+  <label>Password</label>
+  <input name="pwd" type="password"><br>
+
+  <label>Name</label>
+  <input name="name" type="text"><br>
+
+  <label>Email</label>
+  <input name="email" type="email"><br>
+
+  <label>Tel</label>
+  <input name="tel" type="tel"><br>
+
+  <label>Local</label>
+  <select name="local" form="myForm">
+    <option value="seoul">soul</option>
+    <option value="singapore">singapore</option>
+    <option value="usa">usa</option>
+  </select>
+
+
+  <button type="submit">입력완료</button>
+</form>
+
+</body>
+</html>

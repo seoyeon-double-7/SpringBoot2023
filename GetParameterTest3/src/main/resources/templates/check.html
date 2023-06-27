@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <div>
+      <span th:text="${member.id}">회원 ID</span>
+      <span th:text="${member.pwd}">회원 비번</span>
+      <span th:text="${member.name}">회원 이름</span>
+      <span th:text="${member.email}">회원 이메일</span>
+      <span th:text="${member.tel}">회원 전번</span>
+      <span th:text="${member.local}">회원 지역</span>
+    </div>
+
+  </div>
+</body>
+</html>
