@@ -20,6 +20,12 @@ public class homeController {
         return "index";
     }
 
+@GetMapping("/test")
+public String test(@RequestParam("id") String id, @RequestParam("pass") String pw, Model model){
+        model.addAttribute(id);
+        model.addAttribute(pw);
+        return "re_test1";
+}
 
 //    @GetMapping("/test1")
 //    public String test1(@RequestParam("id") String id, @RequestParam("pass") String pw, Model model){

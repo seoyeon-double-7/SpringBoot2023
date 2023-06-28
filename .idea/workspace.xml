@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cb45a84-b04c-4592-83fd-f18fb5dd8fa9" name="Changes" comment="" />
+    <list default="true" id="1cb45a84-b04c-4592-83fd-f18fb5dd8fa9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/springTest0627/src/main/java/kr/hs/study/springTest0627/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springTest0627/src/main/java/kr/hs/study/springTest0627/contoller/homeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springTest0627/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springTest0627/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springTest0627/src/main/resources/templates/test1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springTest0627/src/main/resources/templates/test2.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +30,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/boot/springTest0627"
+    "last_opened_file_path": "C:/boot/model2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
