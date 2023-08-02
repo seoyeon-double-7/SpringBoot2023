@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>도서 목록</h1>
+<table border>
+  <tr><td>ID</td> <td>Name</td><td>Author</td></tr>
+  <tr th:each="one:${list}">
+    <td th:text="${one.book_id}"></td>
+    <td th:text="${one.book_title}"></td>
+    <td th:text="${one.book_author}"></td>
+  </tr>
+</table>
+</body>
+</html>

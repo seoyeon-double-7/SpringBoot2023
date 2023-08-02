@@ -8,4 +8,6 @@ public interface productDAO {
     //insert, delete, update, select  메서드
     public void add(productDTO dto);
     public List<productDTO> listAll();
+
+    public void delete(int id);
 }

@@ -27,5 +27,11 @@ public class productDAOImpl implements productDAO{
         return dto;
     }
 
+    @Override
+    public void delete(int id) {
+        String sql = "delete from product where product_id = ?";
+        jdbc.update(sql, id);
+    }
+
 
 }

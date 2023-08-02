@@ -9,4 +9,7 @@ public interface productService {
 
 //    select
     public List<productDTO> listAll();
+
+//    delete
+    public void delete(int id);
 }

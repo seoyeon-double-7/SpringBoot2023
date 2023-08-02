@@ -22,6 +22,11 @@ public class productServiceImpl implements productService{
     public List<productDTO> listAll() {
         return dao.listAll();
     }
+
+    @Override
+    public void delete(int id) {
+        dao.delete(id);
+    }
 }
 
 

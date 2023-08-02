@@ -11,7 +11,7 @@
     <tr th:each="one:${list}">
       <td th:text="${one.product_id}"></td>
        <td th:text="${one.product_name}"></td>
-        <td>수정삭제</td>
+        <td><a th:href="@{'/update/'+${one.product_id}}">수정</a> | <a th:href="@{'/delete/'+${one.product_id}}">삭제</a></td>
     </tr>
   </table>
 </body>
