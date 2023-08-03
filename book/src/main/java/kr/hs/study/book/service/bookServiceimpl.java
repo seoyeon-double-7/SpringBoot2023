@@ -20,4 +20,20 @@ public class bookServiceimpl implements bookService{
     public List<bookDTO> listAll() {
         return dao.listAll();
     }
+
+    @Override
+    public void delete(String id) {
+        dao.delete(id);
+    }
+
+    @Override
+    public bookDTO read(String id) {
+        return dao.read(id);
+    }
+
+    @Override
+    public void update(bookDTO dto, String id) {
+        dao.update(dto, id);
+    }
+
 }

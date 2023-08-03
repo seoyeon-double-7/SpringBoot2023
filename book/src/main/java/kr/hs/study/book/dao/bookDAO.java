@@ -9,4 +9,10 @@ public interface bookDAO {
 
     public List<bookDTO> listAll();
 
+    public void delete(String id);
+
+    public bookDTO read(String id);
+
+    public void update(bookDTO dto, String id);
+
 }

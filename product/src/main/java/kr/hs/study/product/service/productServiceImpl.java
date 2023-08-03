@@ -15,7 +15,6 @@ public class productServiceImpl implements productService{
     @Override
     public void add(productDTO dto) {
         dao.add(dto);
-
     }
 
     @Override
@@ -24,8 +23,18 @@ public class productServiceImpl implements productService{
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(String id) {
         dao.delete(id);
+    }
+
+    @Override
+    public productDTO read(String id) {
+        return dao.read(id);
+    }
+
+    @Override
+    public void update(productDTO dto, String id) {
+        dao.update(dto, id);
     }
 }
 

@@ -23,20 +23,36 @@ public class productController {
 
     @PostMapping("/add")
     public String add(productDTO dto) {
-       service.add(dto);
+        service.add(dto);
         return "redirect:/list";
     }
 
+    //리스트
     @GetMapping("/list")
     public String list(Model model){
-//        값이 list에 들어감
         List<productDTO> list = service.listAll();
-        model.addAttribute("list",list);
+        System.out.println(list); //list 확인
+        model.addAttribute("list", list);
         return "list";
     }
 
+    //수정
+    @GetMapping("/update/{id}")
+    public String update(@PathVariable String id, Model model){
+        productDTO dto = service.read(id);
+        model.addAttribute("product", dto);
+        return "update";
+    }
+
+    @PostMapping("/update/{id}")
+    public String update_done(productDTO dto, @PathVariable String id){
+        service.update(dto, id);
+        return "redirect:/list";
+    }
+
+    //삭제
     @GetMapping("/delete/{id}")
-    public String delete(@PathVariable("id") int id){
+    public String delete(@PathVariable String id){
         service.delete(id);
         return "redirect:/list";
     }

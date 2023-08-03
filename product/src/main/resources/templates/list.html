@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-  <h1>상품목록</h1>
-  <table border>
-    <tr><td>ID</td> <td>Name</td><td>ETC</td></tr>
-    <tr th:each="one:${list}">
-      <td th:text="${one.product_id}"></td>
-       <td th:text="${one.product_name}"></td>
-        <td><a th:href="@{'/update/'+${one.product_id}}">수정</a> | <a th:href="@{'/delete/'+${one.product_id}}">삭제</a></td>
+<h1>Result</h1>
+<table border>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Etc</th>
     </tr>
-  </table>
+    <tr th:each="item: ${list}">
+        <td th:text="${item.product_id}"></td>
+        <td th:text="${item.product_name}"></td>
+        <td><a th:href="@{'/update/'+${item.product_id}}">수정</a>|<a th:href="@{'/delete/'+${item.product_id}}">삭제</a></td>
+    </tr>
+</table>
+<a th:href="@{/add}">상품 추가하기</a>
+
+</div>
 </body>
 </html>

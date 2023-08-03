@@ -8,4 +8,10 @@ public interface bookService {
     public void add(bookDTO dto);
 
     public List<bookDTO> listAll();
+
+    public void delete(String id);
+
+    public bookDTO read(String id);
+
+    public void update(bookDTO dto, String id);
 }
