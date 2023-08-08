@@ -14,6 +14,9 @@
         select * from myuser where id=#{id}
     </select>
     <update id="update" parameterType="kr.hs.study.Mybatis.dto.myUserDTO">
-        update myuser set id=#{id}, pw=#{pw} where id=#{id}
+        update myuser set pw=#{pw} where id=#{id}
     </update>
+    <delete id="delete" parameterType="kr.hs.study.Mybatis.dto.myUserDTO">
+        delete from myuser where id=#{id}
+    </delete>
 </mapper>

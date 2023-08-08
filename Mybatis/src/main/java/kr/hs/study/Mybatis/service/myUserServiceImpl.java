@@ -28,7 +28,12 @@ public class myUserServiceImpl implements myUserService{
     }
 
     @Override
-    public void update(myUserDTO dto, String id) {
-        mapper.update(dto, id);
+    public void update(myUserDTO dto) {
+        mapper.update(dto);
+    }
+
+    @Override
+    public void delete(String id) {
+        mapper.delete(id);
     }
 }

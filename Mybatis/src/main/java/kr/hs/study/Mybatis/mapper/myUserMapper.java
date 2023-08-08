@@ -9,6 +9,7 @@ import java.util.List;
 public interface myUserMapper {
     public void insert(myUserDTO dto);
     public List<myUserDTO> listAll();
-    public void update(myUserDTO dto, String id);
+    public void update(myUserDTO dto);
     public myUserDTO read(String id);
+    public void delete(String id);
 }

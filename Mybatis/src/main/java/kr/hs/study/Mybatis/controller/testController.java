@@ -40,9 +40,14 @@ public class testController {
         model.addAttribute("myuser", dto);
         return "update";
     }
-    @PostMapping("/update/{id}")
-    public String update_done(myUserDTO dto, @PathVariable String id){
-        service.update(dto, id);
+    @PostMapping("/update")
+    public String update_done(myUserDTO dto){
+        service.update(dto);
+        return "redirect:/list";
+    }
+    @GetMapping("delete/{id}")
+    public String delete(@PathVariable String id){
+        service.delete(id);
         return "redirect:/list";
     }
 

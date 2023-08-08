@@ -10,6 +10,7 @@ public interface myUserService {
     public void insert(myUserDTO dto);
     public List<myUserDTO> listAll();
     public myUserDTO read(String id);
-    public void update(myUserDTO dto, String id);
+    public void update(myUserDTO dto);
+    public void delete(String id);
 
 }
