@@ -5,7 +5,7 @@
 <!-- @Mapper가 있는 파일 위치 패키지명 -->
 <mapper namespace="kr.hs.study.Mybatis.mapper.myUserMapper">
     <insert id="insert" parameterType="kr.hs.study.Mybatis.dto.myUserDTO">
-        insert into myuser (id, pw) values(#{id}, #{pw})
+        insert into myuser (id, name, pw, email, title, content) values(#{id}, #{name}, #{pw}, #{email}, #{title}, #{content})
     </insert>
     <select id="listAll" resultType="kr.hs.study.Mybatis.dto.myUserDTO">
         select * from myuser

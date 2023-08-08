@@ -5,12 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-  <h1>사용자 등록</h1>
+  <h1>board Form</h1>
 <form method="post" action="/add">
-    <label>이름</label>
+    <label>id</label>
     <input name = "id" type="text"><br>
-    <label>비번</label>
-    <input name = "pw" type="password">
+    <label>제목</label>
+    <input name = "title" type="text" placeholder="제목을 입력해주세요"><br>
+    <label>작성자</label>
+    <input name = "name" type="text" placeholder="이름을 입력해주세요"><br>
+    <label>비밀번호</label>
+    <input name = "pw" type="text" placeholder="비밀번호를 입력해주세요"><br>
+    <label>이메일</label>
+    <input name = "email" type="text" placeholder="이메일을 입력해주세요"><br>
+    <label>내용</label>
+    <input name = "content" type="text" placeholder="내용을 입력해주세요"><br>
+
   <button type="submit">입력</button>
 </form>
 </body>
