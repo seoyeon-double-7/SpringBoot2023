@@ -5,7 +5,15 @@
 <!-- @Mapper가 있는 파일 위치 패키지명 -->
 <mapper namespace="kr.hs.study.Mybatis.mapper.myUserMapper">
     <insert id="insert" parameterType="kr.hs.study.Mybatis.dto.myUserDTO">
-        inert into myuser (id, name) values(#{id}, #{name})
+        insert into myuser (id, pw) values(#{id}, #{pw})
     </insert>
-
+    <select id="listAll" resultType="kr.hs.study.Mybatis.dto.myUserDTO">
+        select * from myuser
+    </select>
+    <select id="read" resultType="kr.hs.study.Mybatis.dto.myUserDTO">
+        select * from myuser where id=#{id}
+    </select>
+    <update id="update" parameterType="kr.hs.study.Mybatis.dto.myUserDTO">
+        update myuser set id=#{id}, pw=#{pw} where id=#{id}
+    </update>
 </mapper>

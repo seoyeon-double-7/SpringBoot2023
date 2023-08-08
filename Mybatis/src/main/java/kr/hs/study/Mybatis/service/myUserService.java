@@ -8,4 +8,8 @@ public interface myUserService {
 
 //    insert 메서드, 추가
     public void insert(myUserDTO dto);
+    public List<myUserDTO> listAll();
+    public myUserDTO read(String id);
+    public void update(myUserDTO dto, String id);
+
 }
